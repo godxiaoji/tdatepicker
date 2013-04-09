@@ -119,7 +119,7 @@
                 td.className = "tdp-empty";
             } else {
                 td.className = "tdp-day" + (sign == d ? " tdp-cur": "");
-                if(td.textContent) {
+                if(td.textContent == "") {
                     td.textContent = sign++;
                 } else {
                     td.innerText = sign++;
@@ -135,7 +135,7 @@
                 td = document.createElement("td");
                 if(sign <= months[m]) {
                     td.className = "tdp-day" + (sign == d ? " tdp-cur": "");
-                    if(td.textContent) {
+                    if(td.textContent == "") {
                         td.textContent = sign++;
                     } else {
                         td.innerText = sign++;
